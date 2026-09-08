@@ -33,13 +33,6 @@
       text-align: center;
     }
 
-    .artwork {
-      display: block;
-      width: min(100%, 24rem);
-      height: auto;
-      margin: 0 auto 1.75rem;
-    }
-
     h1 {
       margin: 0;
       font-size: clamp(2.5rem, 8vw, 5rem);
@@ -47,16 +40,44 @@
       letter-spacing: -0.04em;
     }
 
-    p {
-      margin: 1rem 0 0;
+    .release {
+      margin: 0.5rem 0 1.75rem;
       color: #c8d2e3;
       font-size: clamp(1.15rem, 3vw, 1.55rem);
       letter-spacing: 0.02em;
+    }
+
+    .artwork {
+      display: block;
+      width: min(100%, 24rem);
+      height: auto;
+      margin: 0 auto 1.75rem;
+    }
+
+    .message {
+      max-width: 52rem;
+      margin: 0 auto;
+    }
+
+    .message p {
+      margin: 0.75rem 0 0;
+      color: #c8d2e3;
+      font-size: clamp(1rem, 2.5vw, 1.3rem);
+      line-height: 1.5;
+      letter-spacing: 0.01em;
+    }
+
+    .message p:first-child {
+      margin-top: 0;
+      color: #fff;
+      font-weight: 600;
     }
   </style>
 </head>
 <body>
   <main>
+    <h1>ConcordUI</h1>
+    <p class="release">Coming October 2026</p>
     <img
       class="artwork"
       src="concordui-info-2026-09-08.png"
@@ -64,8 +85,10 @@
       width="1024"
       height="1024"
     >
-    <h1>ConcordUI</h1>
-    <p>Coming October 2026</p>
+    <div class="message">
+      <p>Common-denominator functionality—not a common-denominator user interface.</p>
+      <p>One Swift codebase. One function definition. Native UIs for Apple, Android, and Windows.</p>
+    </div>
   </main>
 </body>
 </html>
