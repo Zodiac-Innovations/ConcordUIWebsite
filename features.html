@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Current ConcordUI framework and tooling features."><title>Features — ConcordUI</title>
+<link rel="icon" href="concordui-1024.png"><style>:root{color-scheme:dark;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:#000;color:#fff}*{box-sizing:border-box}body{margin:0;min-height:100vh;background:radial-gradient(circle at top,#101827 0%,#05070b 38%,#000 72%);color:#fff}main{width:min(92vw,58rem);margin:0 auto;padding:3rem 1rem 5rem}header{text-align:center;margin-bottom:2.5rem}.logo{width:5rem;height:5rem;border-radius:1rem}h1{margin:.8rem 0 .3rem;font-size:clamp(2.3rem,7vw,4rem);letter-spacing:-.035em}h2{margin:2.2rem 0 .7rem;color:#fff}h3{margin:1.7rem 0 .5rem;color:#dbe7fa}p,li{color:#c8d2e3;line-height:1.65}a{color:#7db7ff}section{border-top:1px solid #283247;padding-top:.6rem}ul{padding-left:1.35rem}pre{white-space:pre-wrap;overflow-wrap:anywhere;background:#070a10;border:1px solid #283247;border-radius:.8rem;padding:1.25rem;color:#d7deea;line-height:1.45;font:0.88rem ui-monospace,SFMono-Regular,Menlo,monospace}footer{margin-top:3rem;padding-top:1.25rem;border-top:1px solid #283247;text-align:center;color:#8190a8;font-size:.9rem}</style></head><body><main>
+<header><a href="/"><img class="logo" src="concordui-1024.png" alt="ConcordUI"></a><h1>Features</h1></header>
+
+<p>ConcordUI is an open-source, cross-platform user-interface framework for building native applications from a shared Swift application and UI model. This is a current development snapshot and will be updated before release.</p>
+<section><h2>Cross-platform architecture</h2><ul>
+<li>Shared Swift application, screen, presentation, container, and element model.</li>
+<li>Native Apple rendering through SwiftUI and native Android rendering through Jetpack Compose.</li>
+<li>Current iOS, Android, and macOS validation, with architecture and platform APIs prepared for Windows and other future hosts.</li>
+<li>Platform, device-class, and orientation detection, plus platform-specific element filtering and hints.</li>
+<li>Escape hatches for platform-native services when an application needs capabilities outside the portable abstraction.</li>
+</ul></section>
+<section><h2>Application and presentation model</h2><ul>
+<li><code>ConcordApplication</code>, registered screens, screen navigation, optional data passing, scenes, sections, and presentations.</li>
+<li>Standard application features including About, Settings, Help, Contact, What’s New, and custom application actions.</li>
+<li>Standard About presentation using application icon, name, version, build, copyright, acknowledgments, and license links.</li>
+<li>Primary and secondary venues for presenting application content.</li>
+<li>Action bubbling from element to scene/screen, section, and application.</li>
+</ul></section>
+<section><h2>Elements and controls</h2><ul>
+<li>Labels, images, semantic standard icons, dividers, horizontal lines, and spacers.</li>
+<li>Buttons with text, image, combined, round-rectangle, text, and icon presentations.</li>
+<li>Text and password entry with bindings, change callbacks, placeholders, errors, and regular-expression validation.</li>
+<li>Boolean controls with switch, checkbox, radio, optional tri-state values, and custom true/false text.</li>
+<li>Integer and floating-point input with field, stepper, slider, and combo presentations.</li>
+<li>Date, time, and date-time controls with configurable components and ranges.</li>
+<li>String, index, string-tagged, and integer-tagged selections with native presentation styles.</li>
+<li>Determinate and indeterminate progress displays.</li>
+<li>Enabled, read-only, visible, accessibility, help, error, binding, and change-event capabilities.</li>
+</ul></section>
+<section><h2>Layout and appearance</h2><ul>
+<li>Vertical and horizontal stacks, adaptive AB stacks, work-style stacks, boxes, expanders, spacers, and dividers.</li>
+<li>Sizing rules, justification, edge spacing and insets, borders, colors, fonts, and platform-native styling.</li>
+<li>Abstract system and monospaced font families.</li>
+<li>Responsive layouts that can adapt between portrait mobile and landscape or desktop arrangements.</li>
+</ul></section>
+<section><h2>Data, resources, and platform services</h2><ul>
+<li>Codable, identifiable, sendable Concord data protocols with cloning and value transfer.</li>
+<li>Portable bindings and typed <code>onChange</code> callbacks.</li>
+<li>Bundled file, text, PDF, and image resource lookup and retrieval.</li>
+<li>Open, share, and print services where supported by the host platform.</li>
+<li>Application name, version, build, copyright, icon, and platform information.</li>
+<li>Centralized Concord strings designed for future localization.</li>
+</ul></section>
+<section><h2>Developer tooling</h2><ul>
+<li><code>concordui create</code> for a shared project structure and project metadata.</li>
+<li>Apple project generation for iOS and macOS, including assets and test targets.</li>
+<li>Android Studio project generation with Swift/Android bridging and Gradle support.</li>
+<li>App-icon generation for Apple and Android targets.</li>
+<li><code>doctor</code> environment and project checks, plus scoped clean commands and dry-run support.</li>
+<li>Samples, feature showcases, automated builds, and cross-platform parity validation.</li>
+</ul></section>
+<footer>Copyright © 2026 Zodiac Innovations. ConcordUI is licensed under the Apache License 2.0.</footer>
+</main></body></html>
