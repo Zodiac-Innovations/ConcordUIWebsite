@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="ConcordUI — cross-platform application development in Swift. Coming October 2026.">
-  <title>ConcordUI — Coming October 2026</title>
+  <meta name="description" content="ConcordUI — cross-platform application development in Swift. Launching October 13, 2026 at the DC iOS meeting at Capital One.">
+  <title>ConcordUI — Launching October 13, 2026</title>
   <link rel="icon" href="concordui-1024.png">
   <style>
     :root {
@@ -72,12 +72,57 @@
       color: #fff;
       font-weight: 600;
     }
+    .announcement {
+      max-width: 42rem;
+      margin: 0 auto 2rem;
+      padding: 1.5rem;
+      border: 1px solid #384c70;
+      border-radius: 1rem;
+      background: #101c30;
+    }
+
+    .announcement h2 {
+      margin: 0 0 0.75rem;
+      font-size: clamp(1.4rem, 4vw, 1.9rem);
+    }
+
+    .announcement p {
+      margin: 0 0 1.25rem;
+      color: #c8d2e3;
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    .event-link {
+      display: inline-block;
+      padding: 0.8rem 1.2rem;
+      border-radius: 0.5rem;
+      background: #b9d4ff;
+      color: #081426;
+      font-size: 1rem;
+      font-weight: 650;
+      text-decoration: none;
+    }
+
+    .event-link:hover {
+      background: #d5e5ff;
+    }
+
+    .event-link:focus-visible {
+      outline: 3px solid #fff;
+      outline-offset: 4px;
+    }
   </style>
 </head>
 <body>
   <main>
     <h1>ConcordUI</h1>
-    <p class="release">Coming October 2026</p>
+    <p class="release">Launching Tuesday, October 13, 2026</p>
+    <section class="announcement" aria-labelledby="launch-heading">
+      <h2 id="launch-heading">Join us for the ConcordUI launch</h2>
+      <p>Steve Sheets will introduce ConcordUI at the DC iOS developer meeting at Capital One on <time datetime="2026-10-13">Tuesday, October 13, 2026</time>. See how shared Swift code powers applications across platforms and learn how to get started.</p>
+      <a class="event-link" href="https://www.meetup.com/dc-ios/events/316871269/">View meeting details &amp; RSVP</a>
+    </section>
     <img
       class="artwork"
       src="concordui-info-2026-09-08.png"
